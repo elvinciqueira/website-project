@@ -114,8 +114,9 @@ function navToggle(event) {
   }
 }
 
+//EventListeners
+burger.addEventListener('click', navToggle);
 window.addEventListener('mousemove', cursor);
 window.addEventListener('mouseover', activeCursor);
-window.addEventListener('click', navToggle);
 
 animateSlides();
