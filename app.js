@@ -159,12 +159,6 @@ barba.init({
       beforeEnter() {
         logo.href = '../index.html';
         detailAnimation();
-        gsap.fromTo(
-          '.nav-header',
-          1,
-          { y: '100%' },
-          { y: '0%', ease: 'power2.inOut' }
-        );
       },
       beforeLeave() {
         controller.destroy();
@@ -200,6 +194,13 @@ barba.init({
           { x: '100%', stagger: 0.25, onComplete: done }
         );
         tl.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1 });
+        tl.fromTo(
+          '.nav-header',
+          1,
+          { y: '-100%' },
+          { y: '0%', ease: 'power2.inOut' },
+          '-=1.5'
+        );
       },
     },
   ],
