@@ -18,6 +18,11 @@ body {
   background-color: var(--background-color);
   font-family: var(--body-font-family);
   overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  position: absolute;
 }
 
 #logo {
